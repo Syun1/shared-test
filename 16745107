@@ -1,0 +1,18 @@
+#! /bin/bash
+
+a=$1; b=$2
+
+if [ $a \< $b ]; then
+    temp=$b
+    b=$a
+    a=$temp
+fi
+
+c=$((a%b))
+while [ $c -ne 0 ]; do
+    a=$b
+    b=$c
+    c=$((a%b))
+done
+
+echo " $b "
