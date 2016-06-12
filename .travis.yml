@@ -1,3 +1,5 @@
 language: generic
 script:
-- bash -e ./test1.bash
+- cat 16745107
+- cat test.bash
+- bash -e ./test.bash
